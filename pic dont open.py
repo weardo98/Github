@@ -1,0 +1,36 @@
+import time
+import turtle  
+while True :
+    win = turtle.Screen()
+    win.title("Kill all Jews!")
+    time.sleep(1)
+    win.title("Hail Hitler")
+    time.sleep(1)
+n = 90 # turn angle  
+u = 32 # length, in pixels, of 1 "unit"  
+turtle.bgcolor("red")
+turtle.begin_fill()
+turtle.color("white")
+turtle.circle(-120)
+turtle.end_fill()
+turtle.color("black")
+turtle.penup()
+turtle.left(n)
+turtle.forward(-32)
+turtle.right(n)
+turtle.forward(-25)
+turtle.pendown()
+turtle.begin_fill()
+for r in range(0,4):  
+    turtle.forward(u*3)  
+    turtle.right(n)  
+    turtle.forward(u)  
+    turtle.right(n)  
+    turtle.forward(u*2)  
+    turtle.left(n)  
+    turtle.forward(u*1)  
+    turtle.left(n)  
+    turtle.forward(u*2)  
+    turtle.right(n) 
+turtle.end_fill()
+turtle.done()
